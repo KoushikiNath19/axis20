@@ -139,6 +139,48 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 
 }
 
+.button-group {
+  margin: 0px;
+  width: auto;
+  float:right;
+  margin-bottom: 0px;
+}
+.button-group#redBlack .button {
+  background: none;
+  border: none;
+  width: 90px;
+  height: 90px;
+  padding: 0px;
+  display: inline-block;
+  margin: 0px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  font-family: cursive;
+  text-shadow: 0 0 10px rgba(181, 26, 30, 0.4);
+  box-shadow: 0px 0px 0px rgba(28, 28, 28, 0.9);
+}
+.button-group#redBlack .button span {
+  text-align: center;
+  margin: 10px 0 10px 0;
+  display: block;
+  color: #fff;
+  font-size: 32px;
+  text-shadow: none;
+}
+.button-group#redBlack .button:hover {
+  background: linear-gradient(0deg, #0000b3,  #000d33);
+  font-style:oblique;
+  font-size: 15px;
+  }
+.button-group#redBlack .button.active {
+  background: #000080;
+  color: #fff;
+  box-shadow: inset 0px 0px 30px rgba(28, 28, 28, 0.9);
+}
+
+
+
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 15px;
@@ -182,7 +224,7 @@ a:hover, a:focus {
 ul, ol {
   margin: 0;
   padding: 0;
-  list-style: none
+  list-style: none;
 }
 
 .main-btn {
@@ -408,6 +450,7 @@ textarea.input {
   padding: 0;
   font-size: 32px;
   color: #0b0f28;
+  background: none;
 }
 
 #header.transparent-navbar .navbar-toggle {
@@ -1177,4 +1220,28 @@ textarea.input {
   [class*='col-xs'] {
     width: 100%;
   }
+
+
+  @media screen and (max-width: 600px) {
+  . div:not(:first-child) {display: none;}
+  .button-group div.span {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .button-group.responsive {position: relative;}
+  .button-group.responsive div.span{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .button-group.responsive div {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 }
