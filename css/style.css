@@ -42,7 +42,7 @@ body {
   font-size: 16px;
   color: #444;
 }
-#about{margin-top: 300px;}
+#about{margin-top: 0px;}
 
 #myVideo {
   position: absolute;
@@ -57,8 +57,8 @@ body {
   right:1%;
   position:fixed;
  display:block;
-  width:80px;
-  height:80px;
+  width:60px;
+  height:60px;
   background-color:transparent;
   border-radius:50%;
   z-index:20;
@@ -74,7 +74,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   border-radius:50%;
   position:absolute;
   text-align:center;
-  line-height:70px;
+  line-height:40px;
   bottom:15px;
   right:15px;
   z-index:19;
@@ -90,7 +90,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   position:absolute;
   color:white;
   text-align:center;
-  line-height:70px;
+  line-height:40px;
   bottom:15px;
   right:15px;
   z-index:19;
@@ -105,7 +105,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   position:absolute;
   color:white;
   text-align:center;
-  line-height:70px;
+  line-height:40px;
   bottom:15px;
   right: 15px;
   transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;  
@@ -119,22 +119,22 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   position:absolute;
   color:white;
   text-align:center;
-  line-height:70px;
+  line-height:40px;
   bottom:15px;
   right: 15px;
   transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;  
 }
 .mask2 {
  
-  width:80px;
-  height:80px;
+  width:60px;
+  height:60px;
   background:white;
   border-radius:50%;
   position:absolute;
   z-index:21;
   color:black;
   text-align:center;
-  line-height:100px;
+  line-height:90px;
   cursor:pointer;
 
 }
@@ -490,7 +490,7 @@ textarea.input {
 ===========================================================*/
 
 #numbers {
-  margin-top: 200px;
+  margin-top: 20px;
 }
 
 .number {
