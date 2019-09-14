@@ -1,6 +1,6 @@
 /*
 Template Name: Event HTML TEMPLATE
-Author: yaminncco
+Author: HGVK
 
 Colors:
 	Body 		  : #444
@@ -43,7 +43,6 @@ body {
   color: #444;
 }
 #about{margin-top: 0px;}
-
 #myVideo {
   position: absolute;
   right: 0;
@@ -57,8 +56,8 @@ body {
   right:1%;
   position:fixed;
  display:block;
-  width:60px;
-  height:60px;
+  width:65px;
+  height:65px;
   background-color:transparent;
   border-radius:50%;
   z-index:20;
@@ -74,7 +73,8 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   border-radius:50%;
   position:absolute;
   text-align:center;
-  line-height:40px;
+  line-height:45px;
+  color: #3b5998;
   bottom:15px;
   right:15px;
   z-index:19;
@@ -85,12 +85,12 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   width:70%;
   height:70%;
   font-size: 30px;
-  background-color:white;
+  background:white;
   border-radius:50%;
   position:absolute;
-  color:white;
+  color:#fff;
   text-align:center;
-  line-height:40px;
+  line-height:45px;
   bottom:15px;
   right:15px;
   z-index:19;
@@ -103,9 +103,9 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   background-color:white;
   border-radius:50%;
   position:absolute;
-  color:white;
+  color:blue;
   text-align:center;
-  line-height:40px;
+  line-height:45px;
   bottom:15px;
   right: 15px;
   transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;  
@@ -117,22 +117,22 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   background-color:white;
   border-radius:50%;
   position:absolute;
-  color:white;
+  color:blue;
   text-align:center;
-  line-height:40px;
+  line-height:45px;
   bottom:15px;
   right: 15px;
   transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;  
 }
 .mask2 {
  
-  width:60px;
-  height:60px;
-  background:white;
+  width:65px;
+  height:65px;
+  background: #000033;
   border-radius:50%;
   position:absolute;
   z-index:21;
-  color:black;
+  color:white;
   text-align:center;
   line-height:90px;
   cursor:pointer;
@@ -144,6 +144,10 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   width: auto;
   float:right;
   margin-bottom: 0px;
+}
+@media screen and(min-width: 767px)
+{
+  .button-group{margin-right: -170px;}
 }
 .button-group#redBlack .button {
   background: none;
@@ -317,12 +321,14 @@ textarea.input {
 
 .navbar-brand {
   padding: 0;
-  margin: 15px 0px;
+  margin: 15px 0px 15px -170px;
+
 }
 
 .navbar-brand .logo {
   display: inline-block;
   float: left;
+
 }
 
 .navbar-brand .logo>img {
@@ -462,7 +468,7 @@ textarea.input {
 }
 
 #header.fixed-navbar .navbar-toggle {
-  color: #0b0f28 !important;
+  color: #fff !important;
 }
 
 /* Mobile nav */
@@ -475,16 +481,16 @@ textarea.input {
     background-color: black;
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
-  
+
   
   }
   .main-nav.open {
     max-height: 500px;
    z-index: 100;
-
   }
   .main-nav li.active a:after {
     display: none;
+
   }
   #header.transparent-navbar .main-nav li a {
     color: #0b0f28;
@@ -1247,7 +1253,7 @@ textarea.input {
     top: 0;
   }
   .button-group.responsive div {
-    float: none;
+    float: right;
     display: block;
     text-align: left;
   }
