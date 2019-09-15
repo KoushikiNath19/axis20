@@ -155,13 +155,13 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 .button-group#redBlack .button {
   background: none;
   border: none;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   padding: 0px;
   display: inline-block;
   margin: 0px;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   font-family: cursive;
   text-shadow: 0 0 10px rgba(181, 26, 30, 0.4);
@@ -172,7 +172,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   margin: 10px 0 10px 0;
   display: block;
   color: #fff;
-  font-size: 32px;
+  font-size: 24px;
   text-shadow: none;
 }
 .button-group#redBlack .button:hover {
@@ -547,7 +547,7 @@ textarea.input {
 /*=========================================================
 	ABOUT
 ===========================================================*/
-
+#about{ background: white; opacity: 0.8; }
 #numbers {
   margin-top: 20px;
 }
@@ -633,6 +633,7 @@ textarea.input {
 
 #speakers {
   background-color: #F9F9FA;
+  opacity: 0.8;
 }
 
 .speaker {
@@ -1003,6 +1004,10 @@ textarea.input {
   cursor: pointer;
 }
 
+.vnit_map{
+  opacity: 0.8;
+}
+
 /*=========================================================
 	FOOTER
 ===========================================================*/
@@ -1019,6 +1024,29 @@ textarea.input {
   max-height: 50px;
 }
 
+a { color:#000000 ; text-decoration: none; }
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 .copyright {
   height: 50px;
   line-height: 50px;
